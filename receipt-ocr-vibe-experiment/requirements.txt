@@ -1,0 +1,24 @@
+# Receipt OCR App — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+streamlit>=1.35.0
+pandas>=2.0.0
+numpy>=1.26.0
+Pillow>=10.0.0
+
+# Image processing
+opencv-python-headless>=4.9.0.80    # headless = no GUI, works in Colab/server
+
+# Google Cloud Vision OCR
+google-cloud-vision>=3.7.0
+google-auth>=2.29.0
+
+# Database
+# sqlite3 is built into Python — no install needed
+
+# Export
+openpyxl>=3.1.0
+
+# Utilities
+python-dotenv>=1.0.0    # optional: load .env file for credentials path

@@ -1,0 +1,11 @@
+{
+  "full_text": "INDOMARET\nJl. Pahlawan No.12, Jakarta\nTel: 021-5551234\n\n28/06/2024  14:32:05\n\nAQUA 600ML          2X   3.000    6.000\nINDOMIE GORENG      3X   3.500   10.500\nTEH BOTOL SOSRO     1X   5.000    5.000\nPOCARI SWEAT 500ML  2X   7.500   15.000\nCHITATO BBQ         1X  12.000   12.000\n\n------------------------------------\nSUBTOTAL                    48.500\nDISKON MEMBER                2.000\n------------------------------------\nTOTAL                       46.500\n\nTUNAI                       50.000\nKEMBALI                      3.500\n\nMember: 081234567890\nTerima kasih atas kunjungan Anda!\n",
+  "blocks": [
+    {
+      "text": "INDOMARET\nJl. Pahlawan No.12, Jakarta\nTel: 021-5551234\n\n28/06/2024  14:32:05\n\nAQUA 600ML          2X   3.000    6.000\nINDOMIE GORENG      3X   3.500   10.500\nTEH BOTOL SOSRO     1X   5.000    5.000\nPOCARI SWEAT 500ML  2X   7.500   15.000\nCHITATO BBQ         1X  12.000   12.000\n\n------------------------------------\nSUBTOTAL                    48.500\nDISKON MEMBER                2.000\n------------------------------------\nTOTAL                       46.500\n\nTUNAI                       50.000\nKEMBALI                      3.500\n\nMember: 081234567890\nTerima kasih atas kunjungan Anda!\n",
+      "confidence": 0.99,
+      "bounding_box": []
+    }
+  ],
+  "raw_response": "MOCK_MODE"
+}
