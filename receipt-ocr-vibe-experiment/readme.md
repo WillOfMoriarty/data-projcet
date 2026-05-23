@@ -1,4 +1,4 @@
-# Receipt OCR & Automated Parser Pipeline 🧾
+# Receipt OCR & Automated Parser Pipeline 
 
 Proyek ini adalah sebuah aplikasi berbasis web modular yang dirancang untuk melakukan pemindaian, ekstraksi, dan pemrosesan teks dari gambar struk belanja menggunakan Google Cloud Vision API dan Streamlit.
 
