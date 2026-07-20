@@ -113,7 +113,6 @@ for _, sub in subscriptions_df.iterrows():
         usage_rows.append({
             "usage_id": usage_id,
             "customer_id": sub["customer_id"],
-            # PERBAIKAN: Mengonversi sub["start_date"] menjadi format objek .date() agar dipahami oleh Faker
             "usage_date": fake.date_between(start_date=sub["start_date"].date(), end_date=ANALYSIS_DATE.date()),
             "login_count": np.random.poisson(5),
             "session_duration": round(max(1, np.random.normal(45, 15)), 2),
@@ -143,7 +142,6 @@ for _, sub in subscriptions_df.iterrows():
         ticket_rows.append({
             "ticket_id": ticket_id,
             "customer_id": sub["customer_id"],
-            # PERBAIKAN: Mengonversi sub["start_date"] menjadi format objek .date() agar dipahami oleh Faker
             "created_date": fake.date_between(start_date=sub["start_date"].date(), end_date=ANALYSIS_DATE.date()),
             "issue_type": random.choice(issue_types),
             "resolution_time_hours": round(abs(np.random.normal(24, 8)), 2),
@@ -173,7 +171,6 @@ ticket_summary = (
     .reset_index(name="ticket_count")
 )
 
-# PERBAIKAN: Menambahkan .merge(customers_df) agar kolom 'company_size' masuk ke tabel perhitungan churn
 customer_health = (
     subscriptions_df
     .merge(usage_summary, on="customer_id", how="left")
@@ -214,7 +211,6 @@ for _, row in customer_health.iterrows():
 
     status = "Churned" if churned else "Active"
     
-    # PERBAIKAN: Memastikan end_date atau ANALYSIS_DATE dikonversi ke Timestamp sebelum dikurangi objek start_date
     ref_date = pd.Timestamp(end_date) if end_date else ANALYSIS_DATE
     tenure_months = ((ref_date - row["start_date"]).days) // 30
 
@@ -274,7 +270,7 @@ for _, sub in subscriptions_df.iterrows():
 payments_df = pd.DataFrame(payments)
 
 # =====================================================
-# SAVE FILES (PERBAIKAN: Menyambung kode yang terpotong)
+# SAVE FILES 
 # =====================================================
 
 print(f"Saving CSV files to: {OUTPUT_DIR}")
