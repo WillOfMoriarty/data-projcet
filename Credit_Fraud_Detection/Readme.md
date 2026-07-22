@@ -1,7 +1,7 @@
 # Credit Card Fraud Detection with Cost-Sensitive AI
 
 Proyek Machine Learning *end-to-end* ini membangun sistem *screening* awal otomatis untuk mendeteksi fraud kartu kredit secara *real-time*. Berbeda dengan proyek standar yang hanya fokus pada akurasi matematika kering, proyek ini dievaluasi berdasarkan **dampak finansial nyata (Cost-Sensitive Learning)** untuk meminimalkan kerugian operasional dan menyelamatkan aset perusahaan fintech.
-
+source : https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 ---
 
 ### Proyek Goal & Dampak Bisnis
